@@ -1,5 +1,5 @@
 package onlinetest;
 
-public class Voter {
+public class Voter extends Person{
 
 }
