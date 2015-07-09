@@ -2,7 +2,7 @@ package onlinetest;
 
 import java.util.ArrayList;
 
-public class BU
+public class BU extends EVM
 {
 	private ReadyLamp readyLamp;
 	private ArrayList<Candidate> candidates = new ArrayList<Candidate>();
@@ -29,5 +29,10 @@ public class BU
 		{
 			System.out.println(candidate.getName());
 		}
+	}
+
+	public void switchOn()
+	{
+		System.out.println("The CU is on");
 	}
 }

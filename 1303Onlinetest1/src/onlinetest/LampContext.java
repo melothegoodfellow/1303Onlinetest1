@@ -4,8 +4,8 @@ public class LampContext {
 
 	private LampState lampState;
 
-	public LampContext(LampState doorState) {
-		this.lampState = doorState;
+	public LampContext(LampState lampState) {
+		this.lampState = lampState;
 	}
 
 	public void Switch(String type){

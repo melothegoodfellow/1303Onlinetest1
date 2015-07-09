@@ -5,16 +5,14 @@ public class Main
 
 	public static void main(String[] args) 
 	{		
-		EVM evm = new EVM();
+		BU bu = new BU();
+		bu.switchOn();
 		
-		evm.bu.addCandidate("BJP");
-		evm.bu.addCandidate("Cong");
-		evm.bu.addCandidate("AAP");
+		bu.addCandidate("BJP");
+		bu.addCandidate("Congress");
+		bu.addCandidate("AAP");
 		
-		evm.bu.displayCandidates();
-		
-		evm.conductPoll(evm.bu.getCandidates());
-		
+		bu.displayCandidates();
 		
 	}
 
