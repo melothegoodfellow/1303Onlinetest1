@@ -4,8 +4,19 @@ import java.util.ArrayList;
 
 public class BU
 {
-	ArrayList<Candidate> candidates = new ArrayList<Candidate>();
+	private ReadyLamp readyLamp;
+	private ArrayList<Candidate> candidates = new ArrayList<Candidate>();
 	
+	public ArrayList<Candidate> getCandidates()
+	{
+		return candidates;
+	}
+
+	public void setCandidates(ArrayList<Candidate> candidates)
+	{
+		this.candidates = candidates;
+	}
+
 	public void addCandidate(String string)
 	{
 		candidates.add(new Candidate(string));

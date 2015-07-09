@@ -1,13 +1,20 @@
 package onlinetest;
 
+import java.util.ArrayList;
+
 public class EVM {
 
 	BU bu = new BU();
 	CU cu = new CU();
 	
-	public void addCandiate(String string)
+	public void conductPoll(ArrayList<Candidate> candidates)
 	{
-		bu.addCandidate(string);
+		bu.displayCandidates();
+		
+		cu.addVote(candidates);
+		
 	}
+	
+	
 
 }

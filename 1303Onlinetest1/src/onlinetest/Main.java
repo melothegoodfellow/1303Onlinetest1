@@ -4,14 +4,16 @@ public class Main
 {
 
 	public static void main(String[] args) 
-	{
+	{		
 		EVM evm = new EVM();
 		
-		evm.addCandiate("BJP");
-		evm.addCandiate("Cong");
-		evm.addCandiate("AAP");
+		evm.bu.addCandidate("BJP");
+		evm.bu.addCandidate("Cong");
+		evm.bu.addCandidate("AAP");
 		
 		evm.bu.displayCandidates();
+		
+		evm.conductPoll(evm.bu.getCandidates());
 		
 		
 	}
