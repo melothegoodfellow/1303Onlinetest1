@@ -1,20 +1,13 @@
 package onlinetest;
 
-public class On extends LampState 
+public class On extends SwitchCommand 
 {
 
-	public On()
-	{
-		currentState = "On";
-	}
-
 	@Override
-	public void switchState(LampContext context, String type)
+	public void working(Lamp lamp)
 	{
-		System.out.print("The "+type+ " Lamp is "+currentState);
-		Off off=new Off();
-		context.setLampState(off);
-		System.out.print(" ."+context.getLampState().currentState+" the Lamp!!\t");
+		lamp.on();
 		
 	}
+
 }

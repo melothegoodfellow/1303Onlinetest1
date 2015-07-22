@@ -9,6 +9,6 @@ public class CandidateButton extends Button
 	public void castVote(int candidID)
 	{
 		cu.addVote(candidScreen.getCandidates().get(candidID), 1);
-		lamp.lampOn(candid);
+		lamp.lampOn(candidID);
 	}
 }

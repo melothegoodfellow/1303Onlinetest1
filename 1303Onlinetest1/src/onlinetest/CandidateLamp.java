@@ -9,8 +9,8 @@ public class CandidateLamp
 		
 	}
 	
-	public void lampOn()
+	public void lampOn(int index)
 	{
-		System.out.println("The Candidate Lamp is on for "+candidScreen.);
+		System.out.println("The Candidate Lamp is on for "+candidScreen.getCandidates().get(index).getName());
 	}
 }
