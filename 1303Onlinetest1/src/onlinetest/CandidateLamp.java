@@ -1,6 +1,6 @@
 package onlinetest;
 
-public class CandidateLamp
+public class CandidateLamp extends Lamp
 {
 	CandidateScreen candidScreen = new CandidateScreen();
 	
@@ -9,8 +9,8 @@ public class CandidateLamp
 		
 	}
 	
-	public void lampOn(int index)
+	public void on(int index)
 	{
-		System.out.println("The Candidate Lamp is on for "+candidScreen.getCandidates().get(index).getName());
+		System.out.print("for "+candidScreen.getCandidates().get(index).getName()+"\n");
 	}
 }

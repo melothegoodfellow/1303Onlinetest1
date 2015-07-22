@@ -15,19 +15,26 @@ public class Main
 					
 		evm.bu.candidScreen.displayCandidates();
 		
+		evm.cu.ballot.openVoting();
+		
 		evm.bu.candidButton.castVote(0);
 		evm.bu.candidButton.castVote(0);
 		evm.bu.candidButton.castVote(2);
 		evm.bu.candidButton.castVote(1);
 		evm.bu.candidButton.castVote(0);
+		evm.cu.closeButton.closeVoting();
 		evm.bu.candidButton.castVote(2);
 		evm.bu.candidButton.castVote(1);
 		
+		//evm.cu.closeButton.closeVoting();
 		
+		evm.cu.totalButton.getTotalVoters();
 		
-		evm.cu.displayResult();
+		evm.cu.resultButton.displayResult();
 		
+		evm.cu.clearButton.clearVoting();
 		
+		//evm.bu.candidScreen.displayCandidates();
 	}
 
 }

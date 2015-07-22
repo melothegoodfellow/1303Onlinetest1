@@ -7,6 +7,10 @@ public class CU
 	
 	static HashMap<Candidate, Integer> map = new HashMap<Candidate, Integer>();
 	BallotButton ballot = new BallotButton();
+	ResultButton resultButton = new ResultButton();
+	ClearButton clearButton = new ClearButton();
+	CloseButton closeButton = new CloseButton();
+	TotalButton totalButton = new TotalButton();
 	
 	public void pressBallotButton()
 	{
@@ -28,11 +32,5 @@ public class CU
 		System.out.println("The CU switched on");
 	}
 
-	public void displayResult()
-	{
-		for (Candidate candid : map.keySet())
-		{
-			System.out.println(candid.getName()+" "+map.get(candid));
-		}
-	}
+	
 }

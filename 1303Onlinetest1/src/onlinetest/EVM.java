@@ -10,7 +10,10 @@ public class EVM
 	{
 		cu.switchOn();
 		bu.switchOn();
-		readyLamp.on();
+		Factory f = new Factory();
+		SwitchCommand sc=new On();
+		sc.working((f.getLamp("On Lamp")));
+		sc.working((f.getLamp("Ready Lamp")));
 	}
 	
 }

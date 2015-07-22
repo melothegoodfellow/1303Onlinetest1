@@ -2,13 +2,13 @@ package onlinetest;
 
 public class Lamp
 {
-	public void on()
+	public void on(String string)
 	{
-		System.out.println("The lamp is on");
+		System.out.println("The "+string+" lamp is on");
 	}
 	
-	public void off()
+	public void off(String string)
 	{
-		System.out.println("The lamp is off");
+		System.out.println("The "+string+" lamp is off");
 	}
 }
